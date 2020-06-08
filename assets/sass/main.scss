@@ -2108,3 +2108,14 @@ body.is-mobile {
 .img-w100 {
   width: 100%;
 }
+
+.images-isotank {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  img {
+    max-width: 500px;
+    margin: 15px;
+    width: 50%;
+  }
+}
