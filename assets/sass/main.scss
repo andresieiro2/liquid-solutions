@@ -2092,3 +2092,19 @@ body.is-mobile {
 .ml-2 {
   margin-left: 2em;
 }
+
+.link-icon {
+  display: flex;
+  height: 50px;
+  text-decoration: none;
+  border: none;
+  align-items: center;
+  .icon {
+    width: 50px;
+    margin-right: 10px;
+  }
+}
+
+.img-w100 {
+  width: 100%;
+}
