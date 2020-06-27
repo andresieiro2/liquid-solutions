@@ -2606,7 +2606,7 @@ body.is-mobile.landing #footer {
   border: none;
   align-items: center; }
   .link-icon .icon {
-    width: 50px;
+    width: 30px;
     margin-right: 10px; }
 
 .img-w100 {
@@ -2617,11 +2617,10 @@ body.is-mobile.landing #footer {
 
 .images-isotank {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
+  width: 100%;
+  justify-content: space-around; }
   .images-isotank img {
     max-width: 500px;
-    margin: 15px;
     width: 50%; }
 
 #footer {
@@ -2630,3 +2629,6 @@ body.is-mobile.landing #footer {
   align-items: center; }
   #footer input[type="submit"] {
     margin-top: 20px; }
+
+.align-center {
+  align-items: center; }
