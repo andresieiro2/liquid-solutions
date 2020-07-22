@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "engines": {
-    "node": "12.18.2"
+    "node": "8.17.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch assets/sass --o assets/css",
-    "start": "node node_modules/http-server/bin/http-server ./source --port 3000 -a https://liquid-solutions.herokuapp.com/"
+    "start": "node node_modules/http-server/bin/http-server ./source "
   },
   "author": "",
   "license": "ISC",
