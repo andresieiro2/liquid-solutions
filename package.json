@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch assets/sass --o assets/css",
-    "start": "node node_modules/http-server/bin/http-server ./source"
+    "start": "node node_modules/http-server/bin/http-server ./source --port 3000 -a https://liquid-solutions.herokuapp.com/"
   },
   "author": "",
   "license": "ISC",
