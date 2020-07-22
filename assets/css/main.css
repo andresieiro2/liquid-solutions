@@ -2632,3 +2632,20 @@ body.is-mobile.landing #footer {
 
 .align-center {
   align-items: center; }
+
+.index-title h2 {
+  font-size: 3em !important; }
+
+.index-title .subtitle {
+  font-size: 1.5em !important; }
+
+.logo-braid-flexitanks {
+  width: 200px;
+  margin-bottom: 20px; }
+
+a {
+  border: none !important; }
+
+.row.al-middle {
+  display: flex;
+  flex-direction: column; }
