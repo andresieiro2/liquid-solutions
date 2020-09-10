@@ -2173,7 +2173,7 @@ button,
           #menu ul > li > a {
             line-height: 3em; } }
   #menu .close {
-    background-image: url("images/close.svg");
+    background-image: url("../images/close.svg");
     background-position: 4.85em 1em;
     background-repeat: no-repeat;
     border: 0;
@@ -2260,14 +2260,16 @@ body.is-menu-visible #menu {
             outline: 0;
             position: relative; }
             #header nav > ul > li > a.menuToggle:after {
-              background-image: url("images/bars.svg");
+              background-image: url("../../images/bars.png");
               background-position: right center;
               background-repeat: no-repeat;
+              background-size: 20px;
               content: "";
               display: inline-block;
               height: 3.75em;
               vertical-align: top;
-              width: 2em; }
+              width: 2em;
+              filter: invert(1); }
             @media screen and (max-width: 736px) {
               #header nav > ul > li > a.menuToggle {
                 padding: 0 1.5em; }
@@ -2375,7 +2377,7 @@ body.is-menu-visible #menu {
     width: 16em;
     z-index: 1; }
     #banner .more:after {
-      background-image: url("images/arrow.svg");
+      background-image: url("../images/arrow.svg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
@@ -2478,10 +2480,10 @@ body.is-preload #banner:after {
 /* Main */
 #main > header {
   padding: 12em 0 10em 0 ;
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2564,10 +2566,10 @@ body.is-mobile #main > header {
 
 /* Landing */
 body.landing #page-wrapper {
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
@@ -2582,10 +2584,10 @@ body.is-mobile.landing #page-wrapper {
 
 body.is-mobile.landing #banner,
 body.is-mobile.landing .wrapper.style4 {
-  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+  background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
+  background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../../images/banner.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -2649,3 +2651,33 @@ a {
 .row.al-middle {
   display: flex;
   flex-direction: column; }
+
+#nav .special {
+  display: flex;
+  flex-direction: row; }
+  #nav .special .menuToggle::after {
+    opacity: 0; }
+
+#nav .lang-select img {
+  width: 28px;
+  position: relative;
+  top: 5px;
+  margin-right: 10px; }
+  #nav .lang-select img.disabled {
+    filter: grayscale(100%); }
+
+@media (max-width: 768px) {
+  #nav .special .menuToggle::after {
+    opacity: 1; }
+  #nav .lang-select img {
+    top: 8px; } }
+
+body {
+  overflow-x: hidden; }
+
+@media (max-width: 992px) {
+  .flexitanks-images .col-4 {
+    width: 100% !important; }
+    .flexitanks-images .col-4 img {
+      width: 100%;
+      max-width: 400px; } }
